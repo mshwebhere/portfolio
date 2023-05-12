@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/cupstomize_favicon.png" type="image/x-icon">
+
+    <!-- Style -->
+    <style>
+        body {
+            margin: 0px auto;
+            width: 1320px;
+
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd8d3+23,ffffff+100 */
+            background: rgb(255, 216, 211);
+            /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(255, 216, 211, 1) 23%, rgba(255, 255, 255, 1) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(255, 216, 211, 1) 23%, rgba(255, 255, 255, 1) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(255, 216, 211, 1) 23%, rgba(255, 255, 255, 1) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd8d3', endColorstr='#ffffff', GradientType=0);
+            /* IE6-9 */
+
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* #aside */
+        #aside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            width: 50px;
+            height: 50px;
+
+            position: fixed;
+            top: 90%;
+            left: 93%;
+            z-index: 9999;
+
+            background: #bf1e2e;
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        #aside img {
+            width: 35px;
+            height: 35px;
+
+            filter: invert(92%) sepia(5%) saturate(2339%) hue-rotate(317deg) brightness(103%) contrast(101%);
+        }
+    </style>
+
+    <title>CUPSTOMIZE :: BI</title>
+</head>
+
+<body>
+    <img src="./images/guide/01.jpg" alt="BI">
+    <img src="./images/guide/02.jpg" alt="BI">
+    <img src="./images/guide/03.jpg" alt="BI">
+    <img src="./images/guide/04.jpg" alt="BI">
+    <img src="./images/guide/05.jpg" alt="BI">
+    <img src="./images/guide/06.jpg" alt="BI">
+    <img src="./images/guide/07.jpg" alt="BI">
+    <img src="./images/guide/08.jpg" alt="BI">
+    <img src="./images/guide/09.jpg" alt="BI">
+    <img src="./images/guide/10.jpg" alt="BI">
+    <img src="./images/guide/11.jpg" alt="BI">
+    <img src="./images/guide/12.jpg" alt="BI">
+    <img src="./images/guide/13.jpg" alt="BI">
+    <img src="./images/guide/14.jpg" alt="BI">
+    <img src="./images/guide/15.jpg" alt="BI">
+    <img src="./images/guide/16.jpg" alt="BI">
+    <img src="./images/guide/17.jpg" alt="BI">
+    <img src="./images/guide/18.jpg" alt="BI">
+
+    <div id="aside">
+        <img src="./images/icon_top.png" alt="맨위로 가기">
+    </div> <!--#aside-->
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $("#aside>img").click(
+                function () {
+                    $("html,body").animate({ scrollTop: $("html").offset().top }, 1000);
+                });
+        });
+    </script>
+</body>
+
+</html>
