@@ -4189,6 +4189,11 @@ body.is-preload #sidebar nav ul li {
 	background-size: cover;
 }
 
+#one section:nth-child(3) {
+	background: url(../../images/etc_bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+
 #two .features section div {
 	position: relative;
 }
